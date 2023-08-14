@@ -1,45 +1,67 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-body {
+*, html, body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+main {
+  height: 100vh;
+  background: linear-gradient(
+    25deg,
+    #C57035 10% 12.5%,
+    #DA434E 0% ,
+    #F96F72 2.5% 5%,
+    #BF712A 5% ,
+    #F96F72 7.5% 10%,
+    #DA434E 10%,
+    #F96F72 12.5% 15%,
+    #DA434E 15%,
+    #F96F72 17.5% 20%,
+    #BF712A 20%,
+    #F96F72 22.5% 25%,
+    #DA434E 25%,
+    #F96F72 27.5% 30%,
+    #DA434E 30%,
+    #F96F72 32.5% 35%,
+    #DA434E 35%,
+    #F96F72 37.5% 40%,
+    #DA434E 40%,
+    #F96F72 42.5% 45%,
+    #DA434E 45%,
+    #F96F72 47.5% 50%,
+    #BF712A 50%,
+    #F96F72 52.5% 55%,
+    #DA434E 55%,
+    #F96F72 57.5% 60%,
+    #DA434E 60%,
+    #CB481C 62.5% 65%,
+    #DA434E 65%,
+    #F96F72 67.5% 70%,
+    #DA434E 70%,
+    #F96F72 72.5% 75%,
+    #DA434E 75%,
+    #CB481C 77.5% 80%,
+    #DA434E 80%,
+    #F96F72 82.5% 85%,
+    #BF712A 85%,
+    #F96F72 87.5% 90%,
+    #DA434E 90%,
+    #CB481C 92.5% 95%,
+    #DA434E 95%,
+    #F96F72 97.5% 100%
+  );
+  
+  background-size: 400%;
+  animation: mainBg infinite steps(7, end) .75s reverse;
 }
 
-.text-center {
-  text-align: center;
-}
+@keyframes mainBg {
+  0% {
+    /* background: aqua; */
+    background-position: right;
+  }
 
-.pokeImg {
-  image-rendering: pixelated;
+  100% {
+    /* background: red; */
+    background-position: left;
+  }
 }

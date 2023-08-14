@@ -15,9 +15,9 @@ function App() {
 
   return (
     <>
-      <h1>Guess Pokemon</h1>
-      <img src={ sprites?.front_default } className='pokeImg' alt="" />
-      <input type="text" className='text-center' />
+      <main>
+        
+      </main>
     </>
   )
 }
